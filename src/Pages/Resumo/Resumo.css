@@ -1,5 +1,5 @@
 .resumo{
-    height: 100%;
+    margin-top: -4%;
     background-size: 65%;
     background-image: url(/images/arvore-cerejeira-style.png);
     background-repeat: no-repeat;
@@ -15,7 +15,6 @@
 }
 
 .resumo .titulo-livro{
-    margin-right: 20%;
     font-family: 'Quicksand';
     font-size: 50px;
     font-weight: 500;
@@ -31,11 +30,10 @@
     font-weight: 500;
     color: black;
     display: flex;
-    text-align: center;
+    text-align: left;
 }
 
 .descricao-livro{
-    margin-right: 20%;
     font-family: 'Quicksand';
     font-size: 20px;
     font-weight: 400;
@@ -45,39 +43,34 @@
 }
 
 .imagem-livro{
-    margin-top: 10%;
     display: inline-block;
     align-items: center;
-    padding: 12.5%;
-    transform: translate(0%, -40%);  
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    padding-bottom: 5%;
     width: 50%;
 }
 
-.dados{
-    margin-top: 10%;
-    transform: translate(0%, -10%);  
-    display: inline-block;
-    align-items: center;
+.dados{ 
+    display: flex;
+    flex-direction: column;
+    padding-top: 15%;
+    padding-left: 2.5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
     width: 50%;
     min-height: 417px;
 }
 
 .hover01 img {
-<<<<<<< HEAD
     padding-top: 25px;
     -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
-=======
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
->>>>>>> Projeto-final
 }
+
 .hover01 img:hover {
-<<<<<<< HEAD
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
@@ -120,8 +113,4 @@
         font-size: 2.5rem;
     }
 
-=======
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
->>>>>>> Projeto-final
 }

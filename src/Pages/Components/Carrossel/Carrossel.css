@@ -87,6 +87,9 @@
     left: 50%;
     transform: translate(-55%, -500%);
 }
+.historia{
+    background-color:  rgb(255, 255, 255);
+}
 @media only screen and (width < 800px){
     /*for cellphone*/
 
@@ -113,7 +116,7 @@
     }
     .button{
         bottom: 0;
-        font-size: 2vw;
+        font-size: 0.5rem;
         height: 4vh;
     }
     .left{
@@ -134,5 +137,8 @@
         padding-top: 0.4vh;
         top:100%;
         transform: translate(-50%, -500%);
+    }
+    .historia{
+        background-color: #733840;
     }
 }

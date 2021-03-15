@@ -9,6 +9,7 @@ const livros = [
     {
         nome: "Livro: O Auto da Compadecida",
         autor: "Ariano Suassuna",
+		categoria: "Clássicos da Literatura Brasileira",
         descricao: "O Auto da Compadecida consegue o equilíbrio perfeito entre a tradição popular e a elaboração literária ao recriar para o teatro episódios registrados na tradição popular do cordel. É uma peça teatral em forma de Auto em 3 atos, escrita em 1955 pelo autor paraibano Ariano Suassuna. Sendo um drama do Nordeste brasileiro, mescla elementos como a tradição da literatura de cordel, a comédia, traços do barroco católico brasileiro e, ainda, cultura popular e tradições religiosas.",
         comment: "Esse livro é o suprassumo da crítica social",
         name:"Carol(Ana) Madeira",
@@ -20,6 +21,7 @@ const livros = [
     {
         nome: "Livro: A Revolução dos Bichos",
         autor: "George Orwell",
+        categoria: "Ficção",
         descricao: "Verdadeiro clássico moderno, concebido por um dos mais influentes escritores do século XX, A revolução dos bichos é uma fábula sobre o poder. Narra a insurreição dos animais de uma granja contra seus donos. Progressivamente, porém, a revolução degenera numa tirania ainda mais opressiva que a dos humanos.",
         comment: "Esse ai é livro de comunista safado",
         name:"Ana Gonçalves",
@@ -55,6 +57,7 @@ const livros = [
     {
         nome: "Livro: Vidas Secas",
         autor: "Graciliano Ramos",
+		categoria: "Clássicos da Literatura Brasileira",
         descricao: "Lançado originalmente em 1938, Vidas secas retrata a vida miserável de uma família de retirantes sertanejos obrigada a se deslocar de tempos em tempos para áreas menos castigadas pela seca. O pai, Fabiano, caminha pela paisagem árida da caatinga do Nordeste brasileiro com a sua mulher, Sinha Vitória, e os dois filhos, que não têm nome, sendo chamados apenas de “filho mais velho” e “filho mais novo”. São também acompanhados pela cachorrinha da família, Baleia, cujo nome é irônico, pois a falta de comida a fez muito magra.",
         comment:"Um livro impactante que mostra a realidade sofrida brasileira, leitura necessária!",
         name:"Giovanna Pimenta",
@@ -78,6 +81,7 @@ const livros = [
     {
         nome: "Livro: A Vida Não é Útil",
         autor: "Ailton Krenak",
+        categoria: "Biografia",
         descricao: "Se, em meio à terrível pandemia de covid-19, sentimos que perdemos o chão sob nossos pés, as palavras de Krenak despontam como os “paraquedas coloridos” descritos em seu livro Ideias para adiar o fim do mundo, que já vendeu mais de 50 mil cópias no Brasil e está sendo traduzido para o inglês, francês, espanhol, italiano e alemão. A vida não é útil reúne cinco textos adaptados de palestras, entrevistas e lives realizadas entre novembro de 2017 e junho de 2020.",
         comment:"A vida realmente não é útil, então vc deve tacar o louco e sair pelado correndo por ai",
         name: "Victor Halley",
@@ -89,6 +93,7 @@ const livros = [
     {
         nome: "Livro: Vigadores - Guerra dos Reinos",
         autor: "Aaron McGuiness",
+        categoria: "Ficção",
         descricao: "Veja os maiores heróis de Washington em ação quando a Guerra dos Reinos chega à capital dos Estados Unidos. Quem precisa dos Vingadores quando se tem o Esquadrão Supremo da América? Mas quem são esses misteriosos novos heróis, e de onde saíram? Apenas o Agente Culson sabe. E mais: confira dois contos inéditos de Namor e do Capitão América! (Avengers 18 e Marvel Comics Presents 1)",
         comment: "Cadê meu dinheiro de direitos de imagem?",
         name: "Robert Downey Jr.",
@@ -122,8 +127,9 @@ const livros = [
         rate: "4",
     },
     {
-        nome: "Hai Kai",
+        nome: "Livro: Hai Kai",
         autor: "Elza Tacko Doi",
+        categoria: "Literatura Oriental",
         descricao: "Publicado em 1990, este livro constituiu a primeira exposição sistemática da poética do haikai em língua portuguesa, bem como a primeira publicação bilíngue de um conjunto significativo de poemas. Tornou-se assim, como o demonstram as inúmeras referências e as três seguidas edições, um clássico no estudo e na divulgação da poesia japonesa no Brasil. Passado quase um quarto de século, como ainda houvesse demanda de novas tiragens, surge esta nova edição, que mantém as partes centrais do livro e acrescenta, a título de atualização, dois ensaios diretamente decorrentes das pesquisas que conduziram à redação deste volume, dedicados à história do haikai no Brasil.",
         name: "João Vitor Prates",
         comment: "Essa estética, junto com o site ficaram sensacionais!",
@@ -258,7 +264,7 @@ function Livros(){
             {livros.map((listItem) => {
                 return(
                     <div className="livro">
-                        <div>
+                        <div className="hover03">
                             <img className="img-format" src={listItem.pathName}/>
                         </div>
 

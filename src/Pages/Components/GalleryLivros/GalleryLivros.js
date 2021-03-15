@@ -1,10 +1,12 @@
 import React from "react";
 import "./GalleryLivros.css";
+import { useHistory } from "react-router-dom";
 
 function GalleryLivros(){
+    const history = useHistory();
+
     const livros_promocao = [
         {
-<<<<<<< HEAD
             nome: "O Menino Maluquinho",
             autor: "Ziraldo",
             descricao: "Um menininho traquinas, diziam. Tinha macaquinhos no sótão, deitava e rolava, fazendo confusão. Um anjinho, um saci? Alegria da casa, liderava a garotada. Namorador, fazia versinhos, compunha canções, inventava brincadeiras. Era sabido, um amigão. “Menino Maluquinho”, diziam sorrindo as pessoas. Não era, não! Só mais tarde descobriram que tinha sido um garotinho muito amado e, por isso mesmo, muito feliz.",
@@ -51,42 +53,30 @@ function GalleryLivros(){
             name: "William Shakespeare",
             time: "25/10/1599 às 23:54",
             comment: "Ser corno ou não ser. Eis a questão",
-=======
-            nome: "Livro: O Auto da Compadecida",
-            autor: "Ariano Suassuna",
-            pathName: "/images/livros/promocao/auto-da-compadecida.jpg",
         },
-        {
-            nome: "Livro: A Revolução dos Bichos",
-            autor: "George Orwell",
-            pathName: "/images/livros/promocao/revolucao-dos-bichos.jpg",
-        },
-        {
-            nome: "Livro: Lolita",
-            autor: "Vladimir Nabokov",
-            pathName: "/images/livros/promocao/lolita.jpg",
-        },
-        {
-            nome: "Livro: Vidas Secas",
-            autor: "Graciliano Ramos",
-            pathName: "/images/livros/promocao/vidas-secas.jpg",
-        },
-        {
-            nome: "Livro: A Vida Não é Útil",
-            autor: "Ailton Krenak",
-            pathName: "/images/livros/promocao/a-vida-nao-e-util.jpg",
->>>>>>> Projeto-final
-        },
-        
     ];
+
+        function verLivro(livro){
+            history.push({
+                position: window.scrollTo(0, 0),
+                pathname: '/resumo',
+                state: { livro },
+            });
+        }
+
     return (
+        
         <>
             <div className="container">
                 {livros_promocao.map((listItem) => {
                     return(
                         <div className="itens-carousel">
-                            <img className="livro-carousel" src={listItem.pathName}/>
-                                <p className="livro-info">{listItem.nome} <br/> Autor: {listItem.autor}</p>
+                            <div class="hover01">
+                                <img className="livro-carousel" src={listItem.pathName} onClick = {
+                                    () => verLivro(listItem)}/>
+                            </div>
+                                <p className="livro-info">{listItem.nome}
+                                <br/> Autor: {listItem.autor}</p>
                         </div>
                     );
                 })}

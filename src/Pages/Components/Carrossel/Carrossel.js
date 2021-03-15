@@ -48,8 +48,8 @@ function Carrossel(){
                     <Button  className="button left" variant="dark" onClick = {cadastrese}>
                         Cadastre-se já!
                     </Button>
-
-                    <Button className="button right" variant="light" >
+                    
+                    <Button href="#doar" className="button right" variant="light" >
                         Doe um Exemplar
                     </Button>
                 </div>
@@ -57,9 +57,9 @@ function Carrossel(){
                 <div className="content">
                     <img alt="imagem" className="capa-imagem" src="/images/slide-2.png"/>
                     <h1 className="texto globalTitle">Conheça nossa história:</h1>
-                    <a href="#historia"  className="button center btn border btn-sm btn-dark historia"  variant="light" >
+                    <Button href="#historia"  className="button center"  variant="light" >
                         Nossa História
-                    </a>
+                    </Button>
                 </div>
                 
                 <div className="content">
