@@ -3,6 +3,7 @@ import "./Upload.css"
 import { Button, FormLabel, FormGroup } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form'
 import FormFileInput from 'react-bootstrap/esm/FormFileInput';
+
 function Upload() {
   const [photo, setPhoto] = useState({ file: null });
 

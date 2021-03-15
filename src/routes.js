@@ -12,7 +12,7 @@ function Routes(){
     return(
         <BrowserRouter>
             <Switch>
-                <Route path="/" component={userMenu} />   
+                <Route path="/" component={userMenu} />
             </Switch>
             <Route exact path="/">
                 <Redirect to="/home" />
