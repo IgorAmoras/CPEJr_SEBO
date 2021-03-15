@@ -1,13 +1,14 @@
 import React, {useState, useEffect} from "react";
 import Footer from "../Components/Footer/Footer";
-import Comments from "../Components/Comments/Comments";
+import { Button, Comment, Form, Header } from 'semantic-ui-react'
+import Comments from "../Components/Comments/Comments"
+import CustomizedRatings from '../Components/Rating/Rating'
 import "./Resumo.css";
 
 require("typeface-quicksand");
 
 function Resumo( props ){
     const [data, setData] = useState('');
-
     useEffect(() => {
         setData(props.location.state.livro)
       }, []);
@@ -33,13 +34,17 @@ function Resumo( props ){
                         <div className="descricao-livro">
                             {data.descricao}
                         </div>
+                        <div>
+                            <h5 className = "Rating">Já leu este livro? Dê uma avaliação!</h5>
+                            <CustomizedRatings />
+                        </div>
 
-                        <div className="classificacao">
+                        <div className = "Comments">
                             <Comments 
-                            comment= {data.comment} 
-                            name = {data.name} 
-                            time = {data.time} 
-                            icon = {data.icon}/>
+                            comment={data.comment} 
+                            name={data.name} 
+                            time={data.time} 
+                            icon={data.icon}/>
                         </div>
                     </div>
             </div>
